@@ -1,0 +1,201 @@
+/* Definisikan Global Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #f5f7f6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #17694a;
+}
+
+/* Styling untuk Header */
+header {
+    padding: 32px 20px;
+    background-color: #17694a;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 8px 0 0;
+}
+
+/* Styling untuk Navigation */
+nav {
+    padding: 14px 20px;
+    background-color: white;
+    border-bottom: 1px solid #d7e1dc;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 4px 10px;
+    color: #17694a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk Main */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 24px auto;
+}
+
+/* Memilih class content-grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+/* Styling untuk Section - Box */
+section {
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #d7e1dc;
+    border-radius: 16px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #17694a;
+}
+
+/* Profile Section Flexbox */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.profile-photo {
+    width: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #17694a;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    margin-bottom: 8px;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+/* Badge Positioning */
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #17694a;
+    color: white;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #d7e1dc;
+    text-align: left;
+}
+
+th {
+    background-color: #17694a;
+    color: white;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #d7e1dc;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+button[type="submit"] {
+    background-color: #17694a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #114e36;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* DESAIN RESPONSIF (Media Query untuk Layar Laptop/Desktop) */
+@media (min-width: 768px) {
+    .profile {
+        flex-direction: row;
+        text-align: left;
+    }
+}

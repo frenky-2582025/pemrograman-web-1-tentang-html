@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+        <!-- Penghubung ke style.css -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <h1>About Me :)</h1>
+            <p>Welcome to my personal profile page :)</p>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <a href="#profile">Profile</a> |
+            <a href="#hobbies">Hobbies</a> |
+            <a href="#academic">Academic</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main class="content-grid">
+            <!-- SECTION PROFILE -->
+            <section id="profile" class="profile">
+                <span class="badge">STUDENT</span>
+                <img
+                    class="profile-photo"
+                    src="image/liburan.jpeg"
+                    alt="My Profile Photo"
+                >
+                <div class="profile-info"> 
+                    <h2>Frenky Jul Prima Jaya Waruwu</h2>
+                    <p>
+                        <strong>NIM: </strong>
+                        2582028
+                    </p>
+                    <p>
+                        <strong>Major: </strong>
+                        sistem informasi
+                    </p>
+                    <p>
+                        Hello, my name is <b>Frenky Waruwu.</b>
+                        I am a student at Universitas Advent Indonesia.
+                    </p>
+                    <p>
+                        Currently learning about web programming, responsive design, and Java OOP.
+                    </p>
+                </div>                
+            </section>
+
+            <!-- SECTION HOBBIES -->
+            <section id="hobbies">
+                <h2>My Hobbies</h2>
+                <p>I have several Hobbies, such as:</p>
+                <ul>
+                    <li>Running</li>
+                    <li>Programming</li>
+                    <li>football</li>
+                    <li>vollyball</li>
+                </ul>
+            </section>
+
+            <!-- SECTION ACADEMIC -->
+            <section id="academic">
+                <h2>Academic Information</h2>
+                <p>My GPA History for the academic year:</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Semester</th>
+                                <th>GPA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Odd Semester</td>
+                                <td>3.42</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Even Semester</td>
+                                <td>3.20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION CONTACT -->
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>
+                    Feel free to send me a message using the form below.
+                </p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input 
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            minlength="3"
+                            maxlength="50"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea 
+                            id="message"
+                            name="message"
+                            minlength="10"
+                            maxlength="500"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Frenky Waruwu - 2582028</p>
+        </footer>
+    </body>
+</html>
